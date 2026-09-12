@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1120px"
+    },
+    "color": {
+      "custom": false,
+      "palette": [
+        {"slug":"ink","name":"Ink","color":"#16181b"},
+        {"slug":"text","name":"Text","color":"#24272b"},
+        {"slug":"muted","name":"Muted","color":"#6f747b"},
+        {"slug":"paper","name":"Paper","color":"#f6f4ef"},
+        {"slug":"white","name":"White","color":"#ffffff"},
+        {"slug":"accent","name":"Accent","color":"#ff6a2a"},
+        {"slug":"line","name":"Line","color":"#e3dfd7"}
+      ]
+    },
+    "spacing": {
+      "units": ["px","rem","%","vw"],
+      "spacingSizes": [
+        {"slug":"10","size":"0.5rem","name":"XS"},
+        {"slug":"20","size":"0.75rem","name":"S"},
+        {"slug":"30","size":"1rem","name":"M"},
+        {"slug":"40","size":"1.5rem","name":"L"},
+        {"slug":"50","size":"2rem","name":"XL"},
+        {"slug":"60","size":"3rem","name":"2XL"},
+        {"slug":"70","size":"4.5rem","name":"3XL"}
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fluid": true,
+      "fontFamilies": [
+        {"slug":"system","name":"System Sans","fontFamily":"-apple-system,BlinkMacSystemFont,\"Segoe UI\",Arial,sans-serif"}
+      ],
+      "fontSizes": [
+        {"slug":"small","name":"Small","size":"0.875rem"},
+        {"slug":"medium","name":"Medium","size":"1rem"},
+        {"slug":"large","name":"Large","size":"1.25rem"},
+        {"slug":"x-large","name":"XL","size":"clamp(2rem,5vw,3.75rem)"}
+      ]
+    }
+  },
+  "styles": {
+    "color": {"background":"var:preset|color|paper","text":"var:preset|color|text"},
+    "typography": {"fontFamily":"var:preset|font-family|system","fontSize":"var:preset|font-size|medium","lineHeight":"1.55"},
+    "elements": {
+      "button": {
+        "border":{"radius":"12px"},
+        "typography":{"fontWeight":"700"}
+      },
+      "heading": {
+        "color":{"text":"var:preset|color|ink"},
+        "typography":{"fontWeight":"800","lineHeight":"1.08","letterSpacing":"-0.025em"}
+      },
+      "link": {"color":{"text":"var:preset|color|ink"}}
+    },
+    "blocks": {
+      "core/button": {
+        "spacing":{"padding":{"top":"0.85rem","bottom":"0.85rem","left":"1.2rem","right":"1.2rem"}}
+      }
+    }
+  }
+}
